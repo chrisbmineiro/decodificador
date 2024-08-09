@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #F3F5FC;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+}
+body {
+    height: 100vh;
+}
+.logo {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2f4f82;
+}
+.decodificador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex: 1;
+    margin-left: 80px;
+}
+.decodificador__input {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+#input__texto {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    resize: none;
+    font-size: 1rem;
+    margin-top: 90px;
+    border: none;
+    color: #0A3871;
+}
+::placeholder { color: #0A3871; }
+    #input__texto:focus {
+        outline: none;
+    }
+
+.decodificador__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #495057;
+}
+.decodificador__botoes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.decodificador__botoes button {
+    width: 328px;
+    height: 67px;
+    border: 2px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 30px;
+}
+#criptografar {
+    background-color: #0A3871;
+    color: white;
+}
+#descriptografar {
+    background-color: #D8DFE8;
+    color: #2f4f82;
+}
+.decodificador__resultado {
+    background-color: #FFFFFF;
+    background-image: url('/assets/img/High\ quality\ products\ 1\ 1.svg');
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    width: 400px;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.decodificador__resultado:focus {
+    outline: none;
+}
+#output__texto {
+    font-size: 1.2rem;
+    color: #2f4f82;
+}
+.rodape {
+    text-align: center;
+}
