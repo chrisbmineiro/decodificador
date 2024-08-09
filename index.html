@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <img class="logo" src="./assets/img/Frame 6.png" alt="logo">
+        <img class="logo" src="./assets/preview.png" alt="logo">
     </header>
 
     <main class="decodificador">
@@ -19,7 +19,7 @@
             <textarea class="input__texto" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
 
             <div class="decodificador__info">
-                <img src="./assets/img/bi_exclamation-circle-fill.png"><span>Apenas letras minúsculas e sem acento.</span>
+                <img src="./assets/bi_exclamation-circle-fill.png"><span>Apenas letras minúsculas e sem acento.</span>
             </div>
             
             <div class="decodificador__botoes">
@@ -27,10 +27,9 @@
                 <button id="descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
             </div>
         </section>
-
-        <section class="decodificador__resultado">
+        <section class="decodificador__output">
             <textarea class="output__texto" cols="41" rows="4"
-                placeholder=""></textarea>
+                placeholder="Resultado"></textarea>
             <button id="copiar" onclick="copiarTexto()">Copiar</button>
         </section>
     </main>
