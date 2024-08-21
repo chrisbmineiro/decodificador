@@ -2,50 +2,63 @@
     background: #7FA1C3;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 1.5rem;
     line-height: 150%;
 }
 
 .logo {
     border-radius: 50%;
-    margin-left: 10px;
+    margin: 10px;
     width: 5%;
     border: 1px solid #0A3871;
+    transition: 0.3s ease-in-out;
 }
 
 main {
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
 }
 
 .input__texto {
     border: none;
     color: #0A3871;
-    margin-top: 40px;
+    margin-top: 1rem;
     height: 90%;
     text-transform: lowercase;
     resize: none;
 }
 
-::placeholder { color: #0A3871;}
-    .input__texto:focus {
-        outline: none;
-    }
+::placeholder { 
+    color: #0A3871;
+}
+
+.input__texto:focus {
+    outline: none;
+}
 
 .output__texto {
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
-    margin: 30px;
-    padding-left: 20px;
+    margin: 1.4rem;
     position: fixed;
     top: 0;
     right: 0;
-    width: 400px;
-    height: 90%;
+    width: 30%;
+    height: 84%;
+    padding: 0.8rem;
     resize: none;
+}
+.output__texto::placeholder {
+    background-image: url(../assets/boneco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    height: 90%;
+    padding-top: 3%;
+    font-size: 1.3rem;
 }
 
 .output__texto:focus {
@@ -54,42 +67,41 @@ main {
 
 .decodificador__botoes {
     display: flex;
-    margin-top: 16px;
-    gap: 24px;
+    margin-top: .4rem;
+    gap: 1rem;
 }
 
-#criptografar {
+button {
+    border-radius: 1rem;
+    width: 14rem;
+    height: 2.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#criptografar, #copiar{
     background-color: #0A3871;
     border: 1px solid #D8DFE8;
-    border-radius: 24px;
-    color: #F5EDED;
-    width: 328px;
-    height: 67px;
-    cursor: pointer;
+    color: #D8DFE8;
+}
+#criptografar:hover, #descriptografar:hover, #copiar:hover, .logo:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
 }
 
 #descriptografar {
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
-    border-radius: 24px;
     color: #0A3871;
-    width: 328px;
-    height: 67px;
-    cursor: pointer;
 }
 
 #copiar {
-    background-color: #0A3871;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color: #D8DFE8;
-    width: 336px;
-    height: 67px;
-    margin-right: 80px;
-    margin-top: 402px;
     position: absolute;
     right: 0;
-    cursor: pointer;
+    bottom: 0;
+    margin-right: 4rem;
+    margin-bottom: 3.2rem;
 }
 
 .decodificador__info {
@@ -99,10 +111,18 @@ main {
     color: #495057;
 
     span {
-        font-size: 18px;
+        font-size: 1rem;
     }
 }
 
-.rodape {
-    text-align: center;
+.rodape span {
+    position:absolute;
+    margin-left: 20%;
+    font-size: 0.8rem;
+    bottom: 0;
+}
+
+.rodape a {
+    font-size: .8rem;
+    text-decoration: none;
 }

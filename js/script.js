@@ -44,7 +44,7 @@ function desencriptar(stringDesencriptada) {
     return stringDesencriptada;
 }
 
-// Copiar texto
+// Copiar texto e limpar o texto no output
 function copiarTexto() {
     output.select();
     navigator.clipboard.writeText(output.value);

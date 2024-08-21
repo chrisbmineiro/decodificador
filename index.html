@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decodificador</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <script src="./js/script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="./assets/preview.png" alt="logo">
+        <a href="https://github.com/chrisbmineiro" target="_blank">
+            <img class="logo" src="./assets/preview.png" alt="logo" />
+        </a>
     </header>
 
     <main class="decodificador">
-        <section class="decodificador__input">
-            <textarea class="input__texto" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+      <section class="decodificador__input">
+        <textarea
+          class="input__texto"
+          cols="41"
+          rows="4"
+          placeholder="Digite seu texto"
+        ></textarea>
 
-            <div class="decodificador__info">
-                <img src="./assets/bi_exclamation-circle-fill.png"><span>Apenas letras minúsculas e sem acento.</span>
-            </div>
+        <div class="decodificador__info">
+          <img src="./assets/bi_exclamation-circle-fill.png" /><span
+            >Apenas letras minúsculas e sem acento.</span
+          >
+        </div>
+
+        <div class="decodificador__botoes">
+          <button id="criptografar" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+          <button id="descriptografar" onclick="btnDesencriptar()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+      <section class="decodificador__output">
+        <div class="output__container">
+            <textarea class="output__texto" cols="40" rows="5" placeholder="nenhuma mensagem encontrada">
             
-            <div class="decodificador__botoes">
-                <button id="criptografar" onclick="btnEncriptar()">Criptografar</button>
-                <button id="descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
-            </div>
-        </section>
-        <section class="decodificador__output">
-            <textarea class="output__texto" cols="41" rows="4"
-                placeholder="Resultado"></textarea>
+            </textarea>
             <button id="copiar" onclick="copiarTexto()">Copiar</button>
-        </section>
+        </div>
+    </section>
     </main>
-</body>
-
+    <footer class="rodape">
+        <span>Desevolvido por <a href="https://github.com/chrisbmineiro">Christopher Barros</a></span>
+    </footer>
+  </body>
 </html>
