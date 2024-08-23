@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decodificador</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <script src="./js/script.js" defer></script>
   </head>
 
   <body>
-    <header class="cabecalho">
+      <header>
         <a href="https://github.com/chrisbmineiro" target="_blank">
-            <img class="logo" src="./assets/preview.png" alt="logo" />
+          <img class="logo" src="./assets/preview.png" alt="logo" />
         </a>
-    </header>
+      </header>
 
     <main class="decodificador">
       <section class="decodificador__input">
@@ -40,16 +40,21 @@
           </button>
         </div>
       </section>
-      <section class="decodificador__output">
-            <textarea class="output__texto" cols="41" rows="4" placeholder="nenhuma mensagem encontrada">
-            </textarea>
-            <button id="copiar" onclick="copiarTexto()">Copiar</button>
-        </section>
+      <div class="decodificador__output">
+        <textarea
+          class="output__texto"
+          cols="41"
+          rows="4"
+          placeholder="nenhuma mensagem encontrada"
+          disabled
+        >
+        </textarea>
+        <button id="copiar" onclick="copiarTexto()">Copiar</button>
+      </div>
     </main>
-    <footer>
-        <div class="rodape">
-            Desevolvido por <a href="https://github.com/chrisbmineiro">Christopher Barros</a>
-        </div>
+
+    <footer class="rodape">
+      <span>Desevolvido por<a href="https://github.com/chrisbmineiro"> Christopher Barros</a></span>
     </footer>
   </body>
 </html>

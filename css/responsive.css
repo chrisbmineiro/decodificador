@@ -1,90 +1,114 @@
 @media (max-width: 768px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100vw;
-        align-items: center;
+    .decodificador {
+        gap: 30px;
     }
 
     .logo {
-        width: 10%;
+        width: 60px;
     }
 
     .input__texto {
         width: 100%;
-        font-size: 1rem;
+        font-size: 0.6rem;
+    }
+
+    .output__texto {
+        width: 100%;
+        font-size: 0.6rem;
     }
 
     .decodificador__info {
         img {
             width: 0.5rem;
         }
+
         span {
             font-size: 0.6rem;
         }
     }
 
-    .decodificador__output {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        position: relative;
-        bottom: 0;
-        left: 0;
-    }
-
-    .output__texto {
-        font-size: 1.2rem;
-    }
-
     .decodificador__botoes {
         display: flex;
         flex-direction: column;
-        
-    }
-    .decodificador__info {
-        font-size: 0.2rem;
     }
 
-    button {
-        width: 100%;
-        margin-bottom: 0.8rem;
+    .decodificador__botoes button {
+        font-size: 0.5rem;
     }
 
     #copiar {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
+        margin-bottom: 36px;
+        font-size: 0.5rem;
     }
 
-    .rodape span {
-        margin-left: 0;
-        font-size: 0.7rem;
+    .decodificador__info span,
+    a {
+        font-size: 0.5rem;
+    }
+
+    .rodape {
+        span {
+            font-size: 0.5rem;
+        }
+
+        a {
+            font-size: 0.5rem;
+        }
     }
 }
 
 @media (max-width: 480px) {
-    main {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+    .decodificador {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .logo {
         width: 15%;
     }
 
+    .decodificador__info span {
+        font-size: 0.4rem;
+    }
+
+    .decodificador__input {
+        width: 100%;
+    }
+
+    .decodificador__output {
+        width: 100%;
+    }
+
     .input__texto {
-        font-size: 1rem;
+        font-size: 0.5rem;
+    }
+
+    .input__texto::placeholder {
+        text-align: center;
     }
 
     .output__texto {
-        font-size: 1rem;
-        padding: 0.5rem;
-        margin-right: 1rem;
+        font-size: 0.5rem;
+        padding: 10px;
     }
 
-    button {
-        font-size: 1rem;
-        height: 2.5rem;
+    #copiar {
+        position: relative;
+        margin-right: 3rem;
+        margin-top: 0.5rem;
+    }
+
+    .rodape {
+        margin-top: 0;
+
+        span {
+            font-size: 0.4rem;
+        }
+
+        a {
+            font-size: 0.4rem;
+        }
     }
 }
