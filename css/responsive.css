@@ -1,0 +1,90 @@
+@media (max-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100vw;
+        align-items: center;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    .input__texto {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .decodificador__info {
+        img {
+            width: 0.5rem;
+        }
+        span {
+            font-size: 0.6rem;
+        }
+    }
+
+    .decodificador__output {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    .output__texto {
+        font-size: 1.2rem;
+    }
+
+    .decodificador__botoes {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .decodificador__info {
+        font-size: 0.2rem;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 0.8rem;
+    }
+
+    #copiar {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .rodape span {
+        margin-left: 0;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .input__texto {
+        font-size: 1rem;
+    }
+
+    .output__texto {
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin-right: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        height: 2.5rem;
+    }
+}

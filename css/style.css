@@ -6,27 +6,38 @@
     line-height: 150%;
 }
 
+.cabecalho {
+    position: relative;
+}
+
 .logo {
     border-radius: 50%;
     margin: 10px;
-    width: 5%;
+    width: 5vw;
     border: 1px solid #0A3871;
     transition: 0.3s ease-in-out;
 }
 
 main {
     display: flex;
-    margin-bottom: 2rem;
-    margin-left: 4rem;
+    flex-wrap: wrap;
+    margin: 2vw;
+}
+
+.decodificador__input {
+    width: 100%;
+    margin-left: 3rem;
 }
 
 .input__texto {
     border: none;
     color: #0A3871;
     margin-top: 1rem;
-    height: 90%;
+    width: 100%;
+    height: auto;
     text-transform: lowercase;
     resize: none;
+    height: 68%;
 }
 
 ::placeholder { 
@@ -37,28 +48,39 @@ main {
     outline: none;
 }
 
+.decodificador__output {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 80%;
+    margin: 1rem;
+    background: transparent;
+}
+
 .output__texto {
     background-color: #D8DFE8;
-    border: 1px solid #0A3871;
+    border: none;
     border-radius: 24px;
     color: #0A3871;
-    margin: 1.4rem;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 84%;
-    padding: 0.8rem;
+    width: 80%;
+    height: 100%;
+    padding: 0 0.8rem;
     resize: none;
+    box-shadow: rgba(99, 99, 99, 0.4) 8px 8px 0px 0px;
 }
 .output__texto::placeholder {
     background-image: url(../assets/boneco.png);
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    height: 90%;
-    padding-top: 3%;
+    height: 100%;
     font-size: 1.3rem;
+    line-height: 1;
 }
 
 .output__texto:focus {
@@ -73,8 +95,10 @@ main {
 
 button {
     border-radius: 1rem;
-    width: 14rem;
-    height: 2.8rem;
+    width: 100%;
+    max-width: 14rem;
+    padding: 0.5rem;
+    height: auto;
     font-size: 1.2rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -97,11 +121,9 @@ button {
 }
 
 #copiar {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-right: 4rem;
-    margin-bottom: 3.2rem;
+    position: fixed;
+    margin-right: 3.2rem;
+    margin-bottom: 1rem;
 }
 
 .decodificador__info {
@@ -115,11 +137,10 @@ button {
     }
 }
 
-.rodape span {
-    position:absolute;
-    margin-left: 20%;
+.rodape {
+    margin-top: 3rem;
+    text-align: center;
     font-size: 0.8rem;
-    bottom: 0;
 }
 
 .rodape a {
